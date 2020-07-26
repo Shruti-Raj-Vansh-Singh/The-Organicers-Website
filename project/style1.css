@@ -1,0 +1,208 @@
+
+*{
+  background:white; 
+  margin: 0;
+ padding: 0;
+  }
+  
+
+#menu{
+width:100%;
+height:150px;
+background:black;
+
+}
+
+
+#ul1{
+      list-style: none;
+     }
+
+#ul1 li
+{
+font-size: 15px;
+background:grey;
+height:30px;
+float:left;
+margin:0.5px;
+text-align:center;
+color:white;
+margin-top:10px;
+} 
+#ul1 li:hover{
+background:black;
+} 
+#block1{
+	width:100%;
+    background:white;
+   
+	height:500px;
+	
+    padding:0;
+}
+#block3{
+	width:100%;
+    background:black;
+   
+	padding-right:20px;
+	height:relative;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif,"ApexSans-Book","Apex Sans","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+
+}
+#block3img{
+	width:100%;
+	background:black;
+	margin:0 auto;
+	direction:ltr;
+	padding:0;
+	background-size:100%;
+}
+#whiteb1{
+	padding:0 auto;
+	margin:0 auto;
+	width:100%;
+	height:200px;
+	background-color:yellow;
+}
+#whiteh1{
+	color:black;
+	font-weight:normal;
+	font-size:2.7em;
+	padding:10px;
+	margin-top:30px;
+	margin-left:55px;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif,"ApexSans-Book","Apex Sans","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	background-color:white;
+
+}#whitetext{
+	width:50%;
+	position:relative;
+	float:right;
+	margin-top:100px;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif,"ApexSans-Book","Apex Sans","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+	
+	margin-right:20px;
+	padding-right:30px;
+	
+}
+#whiteb2{
+	padding:0 auto;
+	margin:0 auto;
+	width:100%;
+	height:200px;
+	background-color:blue;
+}
+#block4img{
+	width:100%;
+	background:black;
+	margin-left:0;
+	margin-right:100px;
+	background-size:100%;
+	
+}
+#whiteb3{
+	padding:0;
+	margin:0;
+	width:100%;
+	height:200px;
+	background-color:darkgrey;
+}
+#block4{
+	width:100%;
+    background:black;
+    padding-right:20px;
+	height:relative;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif,"ApexSans-Book","Apex Sans","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    padding-top:0;
+}
+#whiteb4{
+	padding:0;
+	margin:0;
+	width:100%;
+	height:200px;
+	background-color:pink;
+}
+#contactus{
+	width:100%;
+    background:black;
+    padding-right:20px;
+	height:relative;
+	font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif,"ApexSans-Book","Apex Sans","Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+    padding-top:0;
+}
+@media (max-width: 900px)
+.pic{
+    background-attachment: scroll;
+    height: 280px;
+}
+.pic {
+    background: url(pic2.jpg) no-repeat fixed;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 120%;
+    background-attachment: fixed;
+    height: 450px;
+}
+
+@media (max-width: 900px)
+.redbells{
+    background-attachment: scroll;
+    height: 280px;
+}
+.redbells {
+    background: url(redbells.png) no-repeat fixed;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 120%;
+    background-attachment: fixed;
+    height: 450px;
+}
+@media (max-width: 900px)
+.time{
+    background-attachment: scroll;
+    height: 280px;
+}
+.time{
+    background: url(timenow.png) no-repeat fixed;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 120%;
+    background-attachment: fixed;
+    height: 450px;
+}
+@media (max-width: 900px)
+.discussion1{
+    background-attachment: scroll;
+    height: 280px;
+}
+.discussion1 {
+    background: url(discussion.png) no-repeat fixed;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 120%;
+    background-attachment: fixed;
+    height: 450px;
+}
+@media (max-width: 900px)
+.discussion2{
+    background-attachment: scroll;
+    height: 280px;
+}
+.discussion2 {
+    background: url(discussion2.png) no-repeat fixed;
+    margin: 0 auto;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-size: 120%;
+    background-attachment: fixed;
+    height: 450px;
+}

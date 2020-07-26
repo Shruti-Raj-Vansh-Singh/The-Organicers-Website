@@ -1,0 +1,332 @@
+
+dark pink
+#e72e77 light pink
+#64485C 
+#f4511e orange
+	
+	body{
+	background: #C2B9B0;
+}
+	
+	
+  .navbar-brand {
+    padding: 0;
+}
+
+
+.navbar-brand  >img {
+    padding: 15px;
+   height:100%;
+}           
+  
+ 
+ .navbar .nav {
+    min-height: 40px;
+}
+
+.navbar-brand {
+    padding: 0 15px;
+    height: 60px;
+    line-height: 40px;
+}
+
+.navbar-toggle {
+    /* (80px - button height 34px) / 2 = 23px */
+    margin-top: 20px;
+    padding: 9px 10px !important;
+}
+
+@media (min-width: 768px) {
+    .navbar-nav > li > a {
+        /* (80px - line-height of 27px) / 2 = 26.5px */
+        padding-top: 16.5px;
+        padding-bottom: 16.5px;
+        line-height: 26.5px;
+    }
+}            
+/*  Let's see the result of this approach. */
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+  .navbar-custom .navbar {
+    margin-bottom: 0;
+    background-color: #314455 !important;          /*  #f4511e;  */
+    z-index: 9999;
+    border: 0;
+    font-size: 12px !important;
+    line-height: 1.42857143 !important;
+    letter-spacing: 4px;
+    border-radius: 0;
+    font-family: Montserrat, sans-serif;
+	opacity:0.8;
+  }
+  .navbar-custom li a .navbar li a, .navbar .navbar-brand {
+    color: #501B1D !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #83677B !important;            /* font color*/
+    background-color: #2E151B !important;   /*when hover the mouse over main menu */
+	
+
+  }
+  .navbar-custom .navbar-inverse.navbar-toggle {
+    border-color: transparent;
+    color: orange !important;
+	
+	
+
+  }
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   .open .dropdown-toggle {
+   
+    background-color:#2E1114 !important;      /* after opening the dropdown box   */
+	
+
+  }
+ .dropdown-menu li a {
+ color:#ADADAD !important;   /* font color of dropdown menu */
+	
+width:100%;
+padding:10px;
+border-bottom:1px #yellow;
+border-radius:0;
+text-align:left;
+background: #501B1D;   /* dropdown box  background */
+
+  }
+  .dropdown-menu li a:hover {
+  background-color: #2E1114 !important;
+
+  }
+ 
+ .dropdown-menu ul li a:last-child
+{
+	border-bottom:none;
+}
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ .navbar-inverse .navbar-toggle .icon-bar {
+                /* icon color */
+	 border:1px solid white;
+}
+ 
+  .navbar-inverse {
+     background-color: #501B1D;
+     border-color: #080808;
+}
+  
+  	
+ 
+
+  /* complete navbar-default */
+  
+  
+  
+  
+  
+  
+
+
+.navbar-inverse .navbar-brand {
+  color: #999999;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-brand:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-text {
+  color: #999999;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+  color: #999999;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+  color: #ffffff;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
+.navbar-inverse .navbar-nav > .active > a:focus {
+  color: #ffffff;
+  background-color: #080808;
+}
+
+.navbar-inverse .navbar-nav > .disabled > a,
+.navbar-inverse .navbar-nav > .disabled > a:hover,
+.navbar-inverse .navbar-nav > .disabled > a:focus {
+  color: #444444;
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+  border-color: #333333;
+}
+
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+  background-color: #333333;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+  background-color: #ffffff;
+}
+
+.navbar-inverse .navbar-collapse,
+.navbar-inverse .navbar-form {
+  border-color: #101010;
+}
+
+.navbar-inverse .navbar-nav > .open > a,
+.navbar-inverse .navbar-nav > .open > a:hover,
+.navbar-inverse .navbar-nav > .open > a:focus {
+  color: #ffffff;
+  background-color: #080808;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a:hover .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+.navbar-inverse .navbar-nav > .dropdown > a .caret {
+  border-top-color: #999999;
+  border-bottom-color: #999999;
+}
+
+.navbar-inverse .navbar-nav > .open > a .caret,
+.navbar-inverse .navbar-nav > .open > a:hover .caret,
+.navbar-inverse .navbar-nav > .open > a:focus .caret {
+  border-top-color: #ffffff;
+  border-bottom-color: #ffffff;
+}
+
+@media (max-width: 767px) {
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .dropdown-header {
+    border-color: #080808;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+    color: #999999;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:focus {
+    color: #ffffff;
+    background-color: transparent;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .active > a:focus {
+    color: #ffffff;
+    background-color: #080808;
+  }
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:hover,
+  .navbar-inverse .navbar-nav .open .dropdown-menu > .disabled > a:focus {
+    color: #444444;
+    background-color: transparent;
+  }
+}
+
+.navbar-inverse .navbar-link {
+  color: #999999;
+}
+
+.navbar-inverse .navbar-link:hover {
+  color: #ffffff;
+}
+
+  
+
+
+
+
+
+
+.carousel-caption{
+top: 50%;
+transform: translateY(-50%);  
+bottom: initial;
+
+}
+
+
+.item
+{
+   -webkit-transform-style: preserve-3d;
+   -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+  .thumbnail {
+ 
+    border: none;
+    border-radius: 0;
+	width:600px;
+	height:400px;
+	background-color:#2E1114 ;
+
+
+	
+             }
+  
+  
+   h2 
+   {
+     font-size: 24px;
+     text-transform: uppercase;
+     color: #303030;
+     font-weight: 600;
+     margin-bottom: 30px;
+  }
+  
+    .bg-c1 
+	{
+      background-color:#2E1114 ;
+    }
+  
+  
+  .container-fluid {
+    padding: 60px 50px;
+  }
+  
+   body
+   {
+     font: 400 15px Lato, sans-serif;
+     line-height: 1.8;
+     color: #818181;
+   }

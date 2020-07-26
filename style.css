@@ -1,0 +1,1461 @@
+
+body{
+	background: #FBE8A6;
+	padding: 5px;
+	padding-right: 0;
+
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #2a1b3d;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  font-family: mighty brush;
+}
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color:#D79922;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Style the sidenav links and the dropdown button */
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color:#D79922;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-size: 30px;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+  background: #553D67;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #2a1b3d;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 600px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .dropdown-container {
+  display: none;
+  background-color: #2a1b3d;
+  padding-left: 4px;
+  font-size: 10px;}
+  .active {
+  color: white;
+  font-size: 10px;
+}
+
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#logo
+{
+	float:right;
+
+}
+#navbar {
+  background-color: #2e151b;
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+
+ 
+ .navbar-inverse .navbar-toggle .icon-bar {
+                /* icon color */
+	 border:1px solid white;
+}
+ 
+  .navbar-inverse {
+    color:#fff;
+     border-color: #080808;
+}
+ 
+
+@font-face {
+	font-family: 'mighty brush';
+	font-display: swap;
+	src: url('/fonts/mighty_brush/MightyBrushDemo.ttf') format('truetype');
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'Asmelina Harley';
+	font-display: swap;
+	src: url('/fonts/asmelina_harley/AsmelinaHarley.ttf') format('truetype');
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'badlystamped';
+	font-display: swap;
+	src: url('/fonts/badlystamped/BadlyStamped.ttf') format('truetype');
+	font-style: normal;
+  }
+@font-face {
+	font-family: 'Samarkan';
+	font-display: swap;
+	src: url('/fonts/samarkan/SAMAN.ttf') format('truetype');
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'codropsicons';
+	font-display: swap;
+	src: url('/fonts/codropsicons/codropsicons.woff') format('woff');
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'cordenilo';
+	font-display: swap;
+	src: url('/fonts/cordenilo/Cordenilo-Bold.otf');
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'Fonters';
+	font-display: swap;
+	src: url('/fonts/fonters/Fonters.ttf') format('truetype');
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'orange Juice';
+	font-display: swap;
+	src: url('/fonts/orange_juice/orange_juice2.ttf') format('truetype');
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'pokemon Solid';
+	font-display: swap;
+	src: url('/fonts/pokemon/PokemonSolid.ttf') format('truetype');
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'Pokemon Hollow';
+	font-display: swap;
+	src: url('/fonts/pokemon/PokemonHollow.ttf') format('truetype');
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'samantha';
+	font-display: swap;
+	src: url('/fonts/samantha/samantha.ttf') format('truetype');
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'undella';
+	font-display: swap;
+	src: url('/fonts/undella/undella.ttf') format('truetype');
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'veteran Typewriter';
+	font-display: swap;
+	src: url('/fonts/veteran_typewriter/veteran_typewriter.ttf') format('truetype');
+	font-style: normal;
+  }
+
+  @font-face {
+	font-family: 'White Angelica';
+	font-display: swap;
+	src: url('/fonts/white_angelica/WhiteAngelica.ttf') format('truetype');
+	font-style: normal;}    
+	
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 30px;
+  color:#D79922;
+  display: block;
+  transition: 0.3s;
+}
+
+/* Style the sidenav links and the dropdown button */
+.dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color:#D79922;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+  font-size: 30px;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+  background: #553D67;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #2a1b3d;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+#logo
+{
+	float:right;
+
+}
+#navbar {
+  background-color: #2e151b;
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
+  width: 100%; /* Full width */
+  transition: top 0.3s; /* Transition effect when sliding down (and up) */
+}
+
+/* Style the navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+  
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.para
+{
+	overflow:auto;
+	padding: 10px;
+	border:2px solid black;
+	margin:10px;
+}
+#left-side-image
+{
+	float:left;
+	padding:0px 20px 20px 20px;
+	}
+#right-side-image
+{
+	float:right;
+	padding:0px 20px 20px 20px;
+	
+}
+.responsive
+{
+	max-width: 100%;
+	height:auto;
+}
+
+
+
+
+/* WEDDING BLOCK CSS*/
+
+
+#textbox1out
+{
+	padding:20px;
+	background: #C3073F;
+	margin:70px;
+	
+}
+.textbox1
+{
+	padding:20px;
+	margin:10px;
+	background: #950740;
+	height: 950px;
+}
+.textbox1 img
+{
+	width:50%;
+	height:100%;
+
+}
+
+.wedhead
+{
+	padding:10px;
+	font-family: White Angelica;
+	color: #FBE8A6;
+	font-size: 50px;
+}
+.wedbody
+{
+	width:40%;
+	padding:20px;
+	padding-bottom: 2px;
+	font-family: samantha;
+	color:#FCCD04;
+	font-size: 30px;
+	line-height: 200%;
+}
+.contactus
+{
+	background-color: #E3AFBC;
+	font-family: Veteran Typewriter;
+	color:#2D283E;
+	border-radius: 20px;
+	font-size: 20px;
+	line-height: 150%;
+}
+
+@media screen and (max-width: 600px) {
+
+	
+	#textbox1out
+	{
+		padding:10px;
+		margin:30px;
+	}
+	.textbox1
+	{
+		padding: 1px;
+		margin:5px;
+		height: 560px;
+	}
+	.textbox1 img{
+		width: 100%;
+		height: 250px;
+	}
+	.wedhead
+	{
+		text-align: center;
+		font-size: 2rem;
+	}
+	.wedbody
+	{
+		font-size: 1.2rem;
+		line-height: 150%;
+	}
+	.contactus
+	{
+		font-size: .6rem;
+		line-height: 150%;
+		word-break: normal;
+	}
+	pre
+	{
+		padding: 0px;
+		font-size: 8px;
+
+	}
+}	
+
+
+
+
+/* BIRTHDAY PARTY BLOCK*/
+
+#textbox2out
+{
+	padding:20px;
+	background: #BC986A;
+	margin:70px;
+}
+.textbox2
+{
+	padding:20px;
+	margin:10px;
+	background: #FBEEC1;
+	height: 950px;
+}
+.bdayhead
+{
+	padding: 10px;
+	font-family: Cordenilo;
+	color: #E7717D;
+	font-size: 50px;
+	text-shadow: 10px;
+}
+.textbox2 img
+{
+	width:50%;
+	height: 100%;
+}
+.bdaybody
+{
+	padding: 11px;
+	font-family: samantha;
+	color:#F64C72;
+	font-size: 30px;
+	line-height: 200%;
+}
+@media screen and (max-width: 600px)
+{
+	#textbox2out
+	{
+		padding:10px;
+		margin:30px;
+	}
+	.textbox2
+	{
+		padding: 1px;
+		margin:5px;
+		height: 560px;
+	}
+	.textbox2 img{
+		width: 100%;
+		height: 250px;
+	}
+	.bdayhead
+	{
+		text-align: center;
+		font-size: 2rem;
+	}
+	.bdaybody
+	{
+		font-size: 1.2rem;
+		line-height: 150%;
+	}
+	.contactus
+	{
+		font-size: .9rem;
+		line-height: 150%;
+		word-break: normal;
+	}
+	pre
+	{
+		padding: 0px;
+		font-size: 8px;
+
+	}
+}	
+
+
+
+
+/* RING CERMONY BLOCK*/
+#textbox3out
+{
+	padding:20px;
+	background: #116466;
+	margin:70px;
+}
+.textbox3
+{
+	padding:20px;
+	margin:10px;
+	background: #78244C;
+	height: 950px;
+}
+.textbox3 img
+{
+	width:50%;
+	height: 100%;
+}
+.ringhead
+{
+	padding: 10px;
+	font-family: Samarkan;
+	color: #E7717D;
+	font-size: 50px;
+	text-shadow: 10px;
+}
+.ringbody
+{
+	padding: 10px;
+	font-family: samantha;
+	color:#F64C72;
+	font-size: 30px;
+	line-height: 200%;
+}
+@media screen and (max-width: 600px)
+{
+	#textbox3out
+	{
+		padding:10px;
+		margin:30px;
+	}
+	.textbox3
+	{
+		padding:10px;
+		margin:5px;
+		height: 560px;
+		
+	}
+	.textbox3 img{
+		width: 100%;
+		height: 250px;
+	}
+	.ringhead
+	{
+		text-align: center;
+		font-size: 2rem;
+	}
+	.ringbody
+	{
+		font-size: 1.2rem;
+		line-height: 166%;
+	}
+	.contactus
+	{
+		font-size: .9rem;
+		line-height: 150%;
+		word-break: normal;
+	}
+	pre
+	{
+		padding: 0px;
+		font-size: 8px;
+
+	}
+}	
+
+
+
+/* THEME PARTY BLOCK */
+#textbox4out
+{
+	padding:20px;
+	background:#474853;
+	margin:70px;
+}
+.textbox4
+{
+	padding:20px;
+	margin:10px;
+	background: #B23850;
+	height: 950px;
+}
+.textbox4 img
+{
+	width:50%;
+	height: 100%;
+}
+.partyhead
+{
+	padding: 10px;
+	font-family:Undella;
+	color:black;
+	font-size: 80px;
+	text-shadow: 10px;
+}
+.partybody
+{
+	padding: 6px;
+	font-family: samantha;
+	color:white;
+	font-size: 30px;
+	line-height: 200%;
+}
+@media screen and (max-width: 600px)
+{
+	#textbox4out
+	{
+		padding:10px;
+		margin:30px;
+	}
+	.textbox4
+	{
+		padding:10px;
+		margin:5px;
+		height: 560px;
+		
+	}
+	.textbox4 img{
+		width: 100%;
+		height: 250px;
+	}
+	.partyhead
+	{
+		text-align: center;
+		font-size: 2rem;
+	}
+	.partybody
+	{
+		font-size: 1.2rem;
+		line-height: 150%;
+	}
+	.contactus
+	{
+		font-size: .9rem;
+		line-height: 150%;
+		word-break: normal;
+	}
+	pre
+	{
+		padding: 0px;
+		font-size: 8px;
+
+	}
+}	
+
+
+
+
+/* SPORTS EVENT BLOCK*/
+#textbox5out
+{
+	padding:20px;
+	background:#8D8741;
+	margin:70px;
+}
+.textbox5
+{
+	padding:20px;
+	margin:10px;
+	background: #BC986A;
+	height: 950px;
+}
+.textbox5 img
+{
+	width:50%;
+	height: 100%;
+}
+.sportshead
+{
+	padding: 10px;
+	font-family:pokemon Solid;
+	color:black;
+	font-size: 50px;
+	text-shadow: 10px;
+}
+.sportsbody
+{
+	padding: 9px;
+	font-family: samantha;
+	color:brown;
+	font-size: 30px;
+	line-height: 200%;
+}
+@media screen and (max-width: 600px)
+{
+	#textbox5out
+	{
+		padding:10px;
+		margin:30px;
+	}
+	.textbox5
+	{
+		padding:10px;
+		margin:5px;
+		height: 560px;
+		
+	}
+	.textbox5 img{
+		width: 100%;
+		height: 280px;
+	}
+	.sportshead
+	{
+		text-align: center;
+		font-size: 2rem;
+	}
+	.sportsbody
+	{
+		font-size: 1.2rem;
+		line-height: 149%;
+	}
+	.contactus
+	{
+		font-size: .9rem;
+		line-height: 150%;
+		word-break: normal;
+	}
+	pre
+	{
+		padding: 0px;
+		font-size: 8px;
+
+	}
+}	
+
+
+
+/* COOPERATE EVENTS*/
+#textbox6out
+{
+	padding:20px;
+	background:#501B1D;
+	margin:70px;
+}
+.textbox6
+{
+	padding:20px;
+	margin:10px;
+	background: #83677B;
+	height:950px;
+}
+.textbox6 img
+{
+	width: 50%;
+	height: 100%;
+}
+.cohead
+{
+	padding: 10px;
+	font-family:undella;
+	color:#1F2833;
+	font-size: 50px;
+	text-shadow: 10px;
+}
+.cobody
+{
+	padding:20px;
+	font-family: samantha;
+	color:#0B0C10;
+	font-size: 30px;
+	line-height: 200%;
+}
+@media screen and (max-width: 600px)
+{
+	#textbox6out
+	{
+		padding:10px;
+		margin:30px;
+		height:550px;
+	}
+	.textbox6
+	{
+		padding:6px;
+		margin:5px;
+		height:519px;
+	}
+	.textbox6 img{
+		width: 100%;
+		height: 250px;
+	}
+	.cohead
+	{
+		padding:0px;
+		text-align: center;
+		font-size: 2rem;
+	}
+	.cobody
+	{
+		padding: 0px;
+		font-size: 1.2rem;
+		line-height: 150%;
+	}
+	.contactus
+	{
+		font-size: .5rem;
+		line-height: 150%;
+		word-break: normal;
+	}
+	pre
+	{
+		padding: 0px;
+		font-size: 8px;
+
+	}
+}	
+
+/* CONCERT*/
+#textbox7out
+{
+	padding:20px;
+	background:#9A1750;
+	margin:70px;
+}
+.textbox7
+{
+	padding:20px;
+	margin:10px;
+	background: #464866;
+	height: 950px;
+}
+.textbox7 img
+{
+	width: 50%;
+	height: 100%;
+}
+.conhead
+{
+	padding: 10px;
+	font-family:Fonters;
+	color:#AAABB8;
+	font-size: 50px;
+	text-shadow: 10px;
+}
+.conbody
+{
+	padding: -6px;
+	font-family: samantha;
+	color:#FEFFFF;
+	font-size: 30px;
+	line-height: 200%;
+}
+@media screen and (max-width: 600px)
+{
+	#textbox7out
+	{
+		padding:10px;
+		margin:30px;
+	}
+	.textbox7
+	{
+		padding:10px;
+		margin:5px;
+		height: 560px;
+		
+	}
+	.textbox7 img{
+		width: 100%;
+		height: 280px;
+	}
+	.conhead
+	{
+		text-align: center;
+		font-size: 2rem;
+	}
+	.conbody
+	{
+		font-size: 1.2rem;
+		line-height: 172%;
+	}
+	.contactus
+	{
+		font-size: .8rem;
+		line-height: 150%;
+		word-break: normal;
+	
+	}
+	pre
+	{
+		padding: 0px;
+		font-size: 2px;
+	}
+}	
+
+
+
+
+.bg-gallery
+{
+	background-color:#2C3531;
+	padding-top:1%;
+	font-size: 40px;
+
+}
+.carousel-control.right, .carousel-control.left {
+    background-image: none;
+    color:#501B1D ;
+  }
+  .carousel-indicators li {
+    border-color:#501B1D ;
+  }
+  .carousel-indicators li.active {
+    background-color:#501B1D  ;
+  }
+  
+ .carousel-caption{
+top: 50%;
+transform: translateY(-50%);  
+bottom: initial;
+
+}
+
+.item
+{
+	-webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+transform-style: preserve-3d;
+}
+.jumbotron
+{
+	background-color: rgba(0,0,0,0.7);
+   	color:#FC4445; 
+	height:20%;
+  }
+  @media screen and (max-height: 600px) {
+  	.jumbotron
+  	{
+  		font-size: 20px;
+  	}
+}
+
+/*url(https://s3-us-west-2.amazonaws.com/consultjeremy.com/backgrounds/about-bg.jpg) */
+.bg-text
+{
+	background-color:rgb(0,0,0);
+	background-color: rgba(0,0,0,0.7);
+ 	height:250px;
+
+}
+
+h1
+{
+	font-family: badlystamped;
+
+}
+
+h2
+{
+	font-family: mighty brush;	
+	color: #FFE400;
+}
+h3
+{
+	font-family:Asmelina Harley;
+	color:#E8A87C;
+	font-size: 30px;
+	padding: 10px;
+	font-weight: 900;
+}
+h4
+{
+	font-family: mighty brush;
+	color:#14A76C;
+	font-size: 22px;
+	padding: 0px;
+}
+.styleimg{
+	width:5000px;
+	height:2000px;
+	padding:1px;
+	margin:1px;
+}
+.container-default
+{
+	padding:0px;
+	margin:0px;
+
+}
+.belowitem
+{
+	background: #ED1C24;
+	color:violet;
+	padding-bottom:20px;
+}
+
+@media screen and (max-height: 600px) {
+	.belowitem
+{
+
+	background: #ED1C24;
+	color:violet;
+	padding-bottom:10px;
+	font-size: 18px;
+}
+}
+
+.book
+{
+	background: yellow;
+    color:white;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .125); 
+    padding:10px 15px;
+    font-size:18px;
+    border-radius:6px;
+}
+.btn-style
+{
+	background:gradient-blue;
+	padding:10px;
+	float: center;
+	color:blue;
+}
+
+
+.picture-scroll1{
+	background: url(images/pic1.jpg) no-repeat fixed;
+}
+.picture-scroll2{
+	background: url(images/picture1.jpg) no-repeat fixed;
+}
+
+.picture-scroll3{
+	background: url(images/picture5.jpg) no-repeat fixed;
+}
+
+.picture-scroll4{
+	background: url(images/picture2.jpg) no-repeat fixed;
+}
+.picture-scroll5{
+	background: url(images/musical-event1.jpg) no-repeat fixed;
+}
+
+.picture-scroll6{
+	background: url(images/picture.jpg) no-repeat fixed;
+}
+
+.picture-scroll7{
+	background: url(images/picture6.jpg) no-repeat fixed;
+}
+
+.picture-scroll8{
+	background: url(images/slider-bg7.jpg) no-repeat fixed;
+}
+[class*="picture-scroll"]
+{
+	height:500px;
+	width:100%;
+	background-size: 120%;
+	background-attachment: fixed;
+	padding:10px;
+	margin: 3px;
+}
+@media screen and (max-width: 600px)
+{
+	.picture-scroll1{
+	background: url(images/pic1.jpg) no-repeat fixed;
+}
+.picture-scroll2{
+	background: url(images/picture1.jpg) no-repeat fixed;
+}
+
+.picture-scroll3{
+	background: url(images/picture5.jpg) no-repeat fixed;
+}
+
+.picture-scroll4{
+	background: url(images/picture2.jpg) no-repeat fixed;
+}
+.picture-scroll5{
+	background: url(images/musical-event1.jpg) no-repeat fixed;
+}
+
+.picture-scroll6{
+	background: url(images/picture.jpg) no-repeat fixed;
+}
+
+.picture-scroll7{
+	background: url(images/picture6.jpg) no-repeat fixed;
+}
+
+.picture-scroll8{
+	background: url(images/slider-bg7.jpg) no-repeat fixed;
+}
+[class*="picture-scroll"]
+{
+	height:150px;
+	width:100%;
+	background-size: 100%;         /* can change this value to reduce the amount of blank space??*/
+	background-attachment: fixed;
+	padding:10px;
+	margin: 3px;
+}
+
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+
+}
+pre
+{
+	border:0;
+	background: transparent;
+}
+
+
+
+/* ABOUT US */
+.aboutusout
+{
+	padding:20px;
+	background:#2E151B;
+	margin:70px; 
+}
+
+.aboutusin
+{
+	padding:60px;
+	margin:20px;
+	background-color: white;
+	height:650px;
+}
+.rightabout
+{
+	float: right;
+	padding:0px;
+	border:none;
+	margin:0;
+}
+.leftabout
+{
+	float: left;
+	padding:0px;
+	border:none;
+}
+.abttop
+{
+	font-size: 50px; 
+	font-family:orange Juice; 
+	text-align: left;
+}
+.abtlin
+{
+	font-size: 70px; font-family: veteran Typewriter;
+}
+@media screen and (max-width: 600px)
+{
+	.aboutusout
+{
+	padding:10px;
+	background:#2E151B;
+	margin:30px; 
+}
+
+.aboutusin
+{
+	padding:20px;
+	margin:5px;
+	background-color: white;
+	height: 490px;
+}
+.rightabout
+{
+	float: right;
+	padding:0px;
+	border:none;
+	width:100%;
+}
+.leftabout
+{
+	float: left;
+	padding:0px;
+	border:none;
+}
+.abttop
+{
+	font-size:30px;
+	font-family:orange juice; 
+}
+.abtlin
+{
+	font-size: 33px;
+	font-family: veteran Typewriter;
+}
+}
+
+/* GALLERY STYLING */
+/* The grid: Four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding:0;
+}
+.row
+{
+	padding: 0;
+}
+
+/* Style the images inside the grid */
+.column img {
+  opacity: 0.8; 
+  cursor: pointer; 
+}
+
+.column img:hover {
+  opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* The expanding image container */
+.mycontainer {
+  position: relative;
+  display: none;
+}
+
+/* Expanding image text */
+#imgtext {
+  position: absolute;
+  bottom: 15px;
+  left: 15px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.galleryclosebtn {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: white;
+  font-size: 35px;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+/*FOOTER*/
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #501B1D 
+  }
+footer {
+  background-color:rgb(0,0,0);
+  color: rgb(185, 132, 77);
+  padding: 32px;
+}
+.list-group-item:first-child {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.list-group-item:last-child {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.btn {
+  padding: 10px 20px;
+  color:rgb(185, 132, 77);
+  background-color: rgb(0,0,0);
+  border-radius: 0;
+  transition: .2s;
+  border-color:none;
+}
+.btn:hover, .btn:focus {
+  border: 1px solid #501B1D;
+  color: rgb(0, 0, 0);
+  background-color: rgb(185, 132, 77);
+}
+.form-control
+{
+ border:1px solid black;
+]
+}
+
+
+
+.form-control:hover
+{
+	
+	
+ border:none;
+  background-color: rgb(185, 132, 77);
+   
+}
+
+
+.modal-header, .close {
+  background-color: rgb(185, 132, 77);
+  color: black !important;
+  text-align: center;
+  font-size: 30px;
+}
+
+.modal-header, .modal-body {
+  padding: 40px 50px;
+}
+
+
+
+
+
+@media(min-width:320px)
+{   
+	.container {
+        		width:320px;
+               }
+}
+@media(min-width:481px)
+{   
+	.container{
+              	width:481px;
+              }
+}
+@media(min-width:641px)
+{   
+	.container{
+               	width:641px;
+              }
+}
+@media(min-width:961px)
+{   
+	.container{
+               	width:961px;
+              }
+}
+@media(min-width:1000px)
+{   
+	.container{
+               	width:1000px;
+               }
+}
+
+
+footer .glyphicon {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #8d8741;
+  }
+footer {
+  background-color:rgb(0,0,0);
+  color: #8d8741;
+
+  padding: 32px;
+  font-family:'dancing script';
+  font-size:20px;
+}
+.fa {
+  padding-top:10px;
+  padding-bottom:10px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  
+	
+
+}
+
+.fa:hover {
+  opacity: 0.7;
+ 
+}
+.no-js #loader { display: none;  }
+.js #loader { display: block; position: absolute; left: 100px; top: 0; }
+.se-pre-con {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	z-index: 9999;
+	background: url(http://smallenvelop.com/wp-content/uploads/2014/08/Preloader_8.gif) center no-repeat #fff;
+}
+/* .......................................................GLOW.......................................................*/
+.glow {
+  font-size: 80px;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
